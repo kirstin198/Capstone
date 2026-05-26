@@ -1,46 +1,50 @@
 @font-face {
- .anonymous-pro-regular {
-  font-family: "Anonymous Pro", monospace;
+  font-family: "Anonymous Pro";
+  src: url("fonts/Anonymous_Pro/AnonymousPro-BoldItalic.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
-.anonymous-pro-bold {
-  font-family: "Anonymous Pro", monospace;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.anonymous-pro-regular-italic {
-  font-family: "Anonymous Pro", monospace;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.anonymous-pro-bold-italic {
-  font-family: "Anonymous Pro", monospace;
-  font-weight: 700;
-  font-style: italic;
-}
-}
 @font-face {
-  .metamorphous-regular 
-  font-family: "Metamorphous", serif;
+  font-family: "Anonymous Pro";
+  src: url("fonts/Anonymous_Pro/AnonymousPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("fonts/Anonymous_Pro/AnonymousPro-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("fonts/Anonymous_Pro/AnonymousPro-Regular.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Metamorphous";
+  src: url("fonts/Metamorphous/Metamorphous-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
+}
+body {
+  font-family: "Anonymous Pro", monospace;
+  color: #e2e2b6;
+  background: #021526;
 }
 
 .header {
   font-family: "Metamorphous", serif;
   color: #E2E2B6;
 }
-body {
-    font-family: "Anonymous Pro", monospace;
-    color: #E2E2B6;
-    background: #021526;
-}
+
 footer {
-    color: #E2E2B6;
+  color: #E2E2B6;
 }
 .nav {
   display: flex;
@@ -49,7 +53,7 @@ footer {
   align-items: center;
   list-style: none;
   margin: 0;
-  background: #03346E;
+  background: #03346e;
 }
 .nav a {
   text-decoration: none;
@@ -59,28 +63,32 @@ footer {
 }
 
 .nav a:hover {
-  background: #6EACDA;
+  background: #6eacda;
 }
 
-.bottom-nav {   
-  bottom: 0;         
-  width: 100%;     
-  background-color: #03346E;
-  display: flex;     
-  justify-content: space-around; 
+.bottom-nav {
+  bottom: 0;
+  width: 100%;
+  background-color: #03346e;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
   height: 60px;
 }
 
 .bottom-nav a {
-  color: #E2E2B6;
+  color: #e2e2b6;
   text-decoration: none;
   font-size: 16px;
   padding: 10px;
-  flex: 1;           /* Makes links take up equal space */
+  flex: 1;
   text-align: center;
 }
 
 .bottom-nav a:hover {
-  background-color: #6EACDA; /* Visual feedback on hover */
+  background-color: #6eacda;
+}
+.photo {
+  border-radius: 10px;
+  margin: 10px;
 }
